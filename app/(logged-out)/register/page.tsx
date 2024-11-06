@@ -3,6 +3,7 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
+import { motion } from "framer-motion";
 
 import {
   Card,
@@ -155,12 +156,12 @@ export default function RegisterPage() {
                 Login
               </Link>
             </div>
-            <div className="text-sm text-muted-foreground">
+            <motion.div className="text-sm text-muted-foreground">
               Forget your password?{" "}
               <Link className="underline" href="/reset-password">
                 Reset password
               </Link>
-            </div>
+            </motion.div>
           </CardFooter>
         </Card>
       )}
